@@ -90,6 +90,7 @@ nav css part end
 #banner_section {
   background-color: #ffdcd8;
   position: relative;
+  overflow: hidden;
 }
 .header {
   padding-top: 293px;
@@ -237,8 +238,8 @@ nav css part end
 }
 .bottomsnakeplate {
   position: absolute;
-  bottom: 0;
-  right: 0;
+  bottom: -3px;
+  right: 0px;
   z-index: 1;
 }
 .bottomsnake {
@@ -255,7 +256,13 @@ nav css part end
 }
 @keyframes recangleboll {
   0% {
-    transform: translateY(60%);
+    transform: translateY(50%);
+  }
+  25% {
+    transform: translateY(20%);
+  }
+  100% {
+    transform: translateY(50%);
   }
 }
 /* animation part end  */
