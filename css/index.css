@@ -1,0 +1,261 @@
+/*
+common css part start
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+ul,
+li {
+  list-style-type: none;
+}
+
+:root {
+  --terciary-text-nunito: "Nunito", sans-serif;
+  --primary-text-opne-sense: "Open Sans", sans-serif;
+  --secondary-text-paprika: "Paprika", cursive;
+  --primary-btn-color: #ff5538;
+  --hero-section-text-color: #29313d;
+  --primary-nav-background-color: #ffdcd8;
+}
+/*
+common css part end
+*/
+/*
+nav css part start
+*/
+nav {
+  padding-top: 30px;
+  position: absolute;
+  top: 0;
+  z-index: 9999;
+  width: 100%;
+}
+.container {
+  width: 1400px;
+  margin: 0 auto;
+}
+.nav_wrapper {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  width: 30%;
+}
+.menu {
+  width: 50%;
+}
+.nav_btn {
+  width: 20%;
+}
+.menu ul {
+  display: flex;
+  justify-content: center;
+}
+.menu ul li {
+  margin-right: 48px;
+}
+
+.menu ul li a {
+  font-family: var(--primary-text-opne-sense);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: capitalize;
+  color: var(--hero-section-text-color);
+}
+
+.nav_btn {
+  text-align: right;
+}
+.button_design {
+  padding: 14px 28px;
+  font-family: var(--terciary-text-nunito);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  background-color: var(--primary-btn-color);
+  border-radius: 18px;
+  border: 2px solid #ff5538;
+  color: white;
+}
+/*
+nav css part end
+*/
+/* header part start */
+#banner_section {
+  background-color: #ffdcd8;
+  position: relative;
+}
+.header {
+  padding-top: 293px;
+  padding-bottom: 297px;
+
+  text-align: center;
+}
+.header h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 130%;
+
+  text-transform: capitalize;
+  padding: 0 412px;
+  color: var(--hero-section-text-color);
+}
+.header p {
+  font-family: var(--terciary-text-nunito);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 200%;
+  text-transform: capitalize;
+  padding: 0 425px;
+  margin-bottom: 24px;
+}
+.header_second_button_design {
+  padding: 14px 28px;
+  font-family: var(--terciary-text-nunito);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  border-radius: 18px;
+  border: 2px solid #ff5538;
+  color: var(--primary-btn-color);
+  margin-left: 28px;
+}
+.header_second_button_design:hover {
+  padding: 14px 28px;
+  font-family: var(--terciary-text-nunito);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  background-color: var(--primary-btn-color);
+  border-radius: 18px;
+  border: 2px solid #ff5538;
+  color: white;
+  transition: all 0.2s linear;
+}
+.information_developer {
+  display: flex;
+  position: absolute;
+  justify-content: space-between;
+  transform: rotate(-90deg) translateY(50%);
+  top: 401px;
+  left: -244px;
+  width: 35%;
+}
+.pera {
+  font-family: var(--terciary-text-nunito);
+  font-size: 20px;
+  font-weight: 600;
+}
+.scroll::before {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 68px;
+  background-color: black;
+  transform: rotate(90deg);
+  top: -19px;
+  left: -57px;
+  border-radius: 15%;
+}
+/* header part start */
+/* animation part start */
+.nav_right_corner_logo {
+  position: absolute;
+  top: -54px;
+  left: -57px;
+  z-index: 999;
+}
+
+.goldenboll {
+  position: absolute;
+  bottom: -144px;
+  left: -86px;
+}
+.sanketypedesgin {
+  position: absolute;
+  bottom: 201px;
+  top: 272px;
+  left: 37px;
+  animation: snakeRotate 15s infinite linear;
+}
+@keyframes snakeRotate {
+  0% {
+    transform: rotateX(18deg);
+  }
+  25% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    transform: 1;
+  }
+}
+.circuler {
+  position: absolute;
+  top: 100px;
+  left: 600px;
+
+  animation: circuleranimation 20s linear infinite;
+}
+.cross {
+  position: absolute;
+  top: 300px;
+  right: 300px;
+  animation: circuleranimation 5s linear infinite;
+}
+@keyframes circuleranimation {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.vector {
+  position: absolute;
+  top: 200px;
+  right: 500px;
+  animation: vector 20s infinite;
+}
+@keyframes vector {
+  0% {
+    opacity: 0.1;
+    transform: scale(0);
+  }
+  75% {
+    opacity: 0.5;
+    transform: scale(2);
+  }
+}
+.bottomsnakeplate {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+.bottomsnake {
+  position: absolute;
+  bottom: 45px;
+  right: 0;
+  z-index: 2;
+}
+.rectangleOne {
+  position: absolute;
+  bottom: 120px;
+  right: 200px;
+  animation: recangleboll 10s linear infinite;
+}
+@keyframes recangleboll {
+  0% {
+    transform: translateY(60%);
+  }
+}
+/* animation part end  */
