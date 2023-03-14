@@ -206,7 +206,6 @@ nav css part end
   position: absolute;
   top: 100px;
   left: 600px;
-
   animation: circuleranimation 20s linear infinite;
 }
 .cross {
@@ -256,13 +255,506 @@ nav css part end
 }
 @keyframes recangleboll {
   0% {
-    transform: translateY(50%);
+    transform: translateY(80%);
   }
   25% {
-    transform: translateY(20%);
+    transform: translateY(10%);
   }
   100% {
-    transform: translateY(50%);
+    transform: translateY(80%);
   }
 }
 /* animation part end  */
+/* cart work start here */
+#cart-slider-translate {
+  transform: translate(-50%, -50%);
+  position: absolute;
+  z-index: 999;
+  left: 50%;
+}
+.cart_Slider {
+  display: flex;
+  justify-content: space-between;
+  /* z-index: 9999; */
+  /* position: absolute; */
+}
+.cart_Slider .cartOne {
+  width: 450px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 30px;
+  padding-right: 46px;
+  background-color: #ffffff;
+  box-shadow: 0px 44px 40px rgba(0, 0, 0, 0.02);
+}
+.cartOne .chart-size {
+  font-size: 80px;
+  margin-bottom: 34px;
+  color: #29313d;
+}
+.cartOne h3 {
+  color: #29313d;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  margin-bottom: 16px;
+}
+.cartOne p {
+  color: #29313d;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 35px;
+  padding-right: 55px;
+}
+
+/* connect_people section start here */
+.connect_people {
+  margin-top: 280px;
+}
+.animationconnetedpeople {
+  position: relative;
+}
+.digitalcircular {
+  left: 508px;
+  top: 171px;
+}
+.sticks {
+  position: absolute;
+  bottom: -893px;
+  right: 0;
+}
+
+.textdesignOne {
+  color: #ff5538;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
+.textdesignTwo {
+  width: 449px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 67.2px;
+  text-transform: capitalize;
+}
+.connect_people .connect_both_side {
+  display: flex;
+  align-items: center;
+}
+
+.connect_left {
+  width: 45%;
+  position: relative;
+}
+.connect_right {
+  width: 55%;
+  overflow-x: hidden;
+}
+
+.connect_left .connect_left_img {
+  width: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+.connect_left .connect_left_img img {
+  width: 105%;
+}
+.connect_right .right {
+  width: 100%;
+  background-color: #ffdcd8;
+  padding-top: 150px;
+  padding-bottom: 100px;
+  padding-left: 150px;
+}
+.connect_right .right h3 {
+  width: 570px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  padding-right: 123px;
+}
+.connect_right .right p {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-right: 280px;
+}
+.connect_right .button_design:hover {
+  background-color: aliceblue;
+  color: #ff5538;
+}
+/* here digital section start */
+.textdigitaltextInfo {
+  margin-bottom: 60px;
+}
+.textdigitaltextInfo h3 {
+  margin-top: 171px;
+}
+.digitaltopPortion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.textdesignTwo.digitalh3 {
+  width: 693px;
+}
+.digitalexpanimation {
+  position: relative;
+}
+.digi_sanke {
+  position: absolute;
+  bottom: -193px;
+  left: 0;
+}
+.digi_boll {
+  left: 60px;
+}
+.viewall .button_design {
+  background-color: transparent;
+  color: #ff5538;
+  border: 1px dashed #ff5538;
+  border-radius: 18px;
+}
+.digi_picture_part_One {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.partOne {
+  box-shadow: 0px -9px 40px rgba(26, 19, 62, 0.06);
+  width: 35%;
+}
+.partOne img {
+  width: 100%;
+}
+.partTwo {
+  box-shadow: 0px -9px 40px rgba(26, 19, 62, 0.06);
+  width: 62%;
+}
+.partTwo img {
+  width: 100%;
+}
+.partOne_text {
+  padding: 20px;
+}
+.partOne_text .texthyperfour {
+  width: 160px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+}
+
+.partOne_text .textpara {
+  width: 160px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  color: #ff5538;
+}
+
+/* summary Result css start here */
+.summaryResult {
+  background-color: rgb(255, 220, 216, 0.4);
+}
+.sum_result {
+  display: flex;
+  align-items: center;
+}
+.total_sum {
+  width: 50%;
+  /* height: 600px; */
+}
+
+.summayleft {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  z-index: 999;
+}
+.one {
+  width: 48%;
+  background-color: #ffffff;
+  color: #29313d;
+  margin-bottom: 20px;
+
+  /* margin-top: 20px; */
+}
+.one_text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 74px 0;
+}
+.one_text h6 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  text-transform: capitalize;
+  color: #29313d;
+}
+.one_text p {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  text-transform: capitalize;
+  color: #29313d;
+}
+.summayright {
+  padding-top: 120px;
+  padding-bottom: 141px;
+  z-index: 999;
+}
+.sum_result .summayright h3 {
+  line-height: 60px;
+}
+.textp_sum {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 550px;
+}
+.sum_result .summayright {
+  margin-left: 100px;
+}
+
+.sum_result .summayright button:hover {
+  background-color: transparent;
+  color: #ff5538;
+}
+.summaryResult {
+  position: relative;
+}
+
+.summay_animation .aniamtionTwo {
+  position: absolute;
+  bottom: -19px;
+  right: 0;
+  z-index: 2;
+}
+.animationOne {
+  position: absolute;
+  top: 228px;
+  left: 0;
+  z-index: 2;
+  animation: circuleranimation 5s infinite linear;
+}
+/*  Trusted css started*/
+.trusted {
+  margin-top: 120px;
+}
+.trued_company {
+  display: flex;
+  justify-content: center;
+}
+.t {
+  width: 849px;
+  text-align: center;
+}
+.companyList {
+  margin-top: 60px;
+  margin-bottom: 120px;
+  display: flex;
+  justify-content: space-between;
+}
+.listOne {
+  width: 16%;
+  padding: 20px 0;
+  background-color: #fdf9f8;
+}
+/* customer feedback */
+.customerFeedback {
+  background-color: rgb(255, 220, 216, 0.4);
+}
+.feedback {
+  display: flex;
+}
+.feedback .feedOne {
+  width: 65%;
+}
+.feedback .feedTwo {
+  width: 35%;
+}
+.feedOne {
+  padding-top: 120px;
+}
+
+.feedOne h3 {
+  margin-bottom: 41px;
+}
+.feedbacktwoimageslider {
+  display: flex;
+}
+
+.feedbacktwoimageslider .imgeOne {
+  width: 100px;
+  height: 100px;
+  margin-right: 28px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.feedbacktwoimageslider .imgeOne img {
+  width: 100%;
+  /* height: 100%; */
+}
+.pew {
+  width: 690px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  text-transform: capitalize;
+  color: #29313d;
+  margin: 60px 0;
+}
+.feedbackinfoname {
+  display: flex;
+  align-items: center;
+}
+.feedname {
+  margin-right: 40px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  text-transform: capitalize;
+}
+.icone_left {
+  margin-left: 10px;
+  width: 64px;
+  height: 64px;
+  background: #ffddd7;
+  border: none;
+  border-radius: 10px;
+  color: black;
+}
+.icone_left.right {
+  color: white;
+  background-color: #ff5538;
+}
+.feedTwo {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.feedTwo .image {
+  border-radius: 30px;
+  overflow: hidden;
+}
+.feedTwo .image img {
+  width: 100%;
+}
+/* project talk */
+.project_talk {
+  background-color: #ffd7c8;
+}
+.projectTalk {
+  padding-top: 100px;
+  /* padding-bottom: 100px; */
+}
+.projectTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  position: relative;
+}
+.projectTop button:hover {
+  background-color: #fdf9f8;
+  color: #ff5538;
+}
+.projectTop::after {
+  content: "";
+  position: absolute;
+  width: 1410px;
+  border-bottom: 1px solid #29313d;
+  bottom: -48px;
+  left: 0;
+}
+
+.extra{
+  width: 1243px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.projectanimation{
+  position: relative;
+}
+.projecanimationOne{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.projecttwo {
+  position: absolute;
+  top: 198px;
+  right: 9px;
+  animation: recangleboll 10s linear infinite;
+
+}
+
+/* lastportion css */
+.lastportion{
+ padding-top: 140px;
+ padding-bottom:57px;
+}
+.lastWrapper{
+  display: flex;
+}
+.lastleft{
+  width: 40%;
+}
+.lastleft img{
+  margin-bottom: 44px;
+}
+.lastp{
+  width: 449px;
+  margin-bottom: 189px;
+}
+.lastRight{
+  width: 60%;
+  
+}
+.rig{
+  display: flex;
+  justify-content: space-between;
+}
+.rightOne h1{
+   width: 102px;
+   margin-bottom: 48px;
+}
+.rightOne p{
+  margin-bottom: 15px;
+}
+.lastLine{
+  display: flex;
+  float: right;
+  margin-top: 67px;
+}
+.lastLine p{
+  margin-left: 20px;
+}
